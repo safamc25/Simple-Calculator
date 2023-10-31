@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="container">
+        <div class="row">
+            <input class="input" id="output" placeholder="0" type="text">
+
+        </div>
+        <div class="row">
+            <button onclick="clearAll()" id="clear" class="buttong" style="font-size: 18px;">AC</button>   
+            <button onclick="removeLast()" id="plusorminus" class="buttong" style="font-size: 17px; ">DEL</button>
+            <button onclick="display('%')" id="percentage" class="buttong">%</button>
+            <button onclick="display('/')" id="divide" class="buttono">/</button>
+
+        </div>
+        <div class="row">
+            
+            <button onclick="display(7)" id="seven" class="buttonb">7</button>   
+            <button onclick="display(8)"  id="eight" class="buttonb">8</button>
+            <button onclick="display(9)" id="nine" class="buttonb">9</button>
+            <button onclick="display('*')"  id="multiply" class="buttono">X</button>
+
+        </div>
+        <div class="row">
+           
+            <button onclick="display(4)" id="four"  class="buttonb">4</button>   
+            <button onclick="display(5)" id="five"  class="buttonb">5</button>
+            <button onclick="display(6)" id="six"  class="buttonb">6</button>
+            <button onclick="display('-')"  id="minus" class="buttono">-</button>
+
+        </div>
+        <div class="row">
+            <button onclick="display(1)"  id="one" class="buttonb">1</button>   
+            <button onclick="display(2)" id="two"  class="buttonb">2</button>
+            <button onclick="display(3)" id="three"  class="buttonb">3</button>
+            <button onclick="display('+')"  id="plus" class="buttono">+</button>
+
+        </div>
+        <div class="row">
+            <button onclick="display(0)"  id="zero" class="buttonbh">0</button>   
+            <button onclick="display('.')"  id="point" class="buttonb">.</button>
+            <button onclick="evaluateExp()" id="equal"  class="buttono">=</button>
+
+        </div>
+
+    </div>
+    
+</body>
+<script src="./main.js"></script>
+</html>
